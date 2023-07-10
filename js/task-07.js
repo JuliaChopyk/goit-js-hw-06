@@ -6,3 +6,4 @@ inputEl.addEventListener("input", changeSizeFont);
 function changeSizeFont() {
   contentSpanEl.style.fontSize = inputEl.value + "px";
 }
+changeSizeFont();

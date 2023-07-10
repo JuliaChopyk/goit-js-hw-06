@@ -4,7 +4,7 @@ contentInputEl.addEventListener("blur", outOfInput);
 
 function outOfInput() {
   const maxLengthContent = Number(contentInputEl.dataset.length);
-  const lengthContent = contentInputEl.value.length;
+  const lengthContent = contentInputEl.value.trim().length;
 
   if (lengthContent === maxLengthContent) {
     contentInputEl.classList.add("valid");

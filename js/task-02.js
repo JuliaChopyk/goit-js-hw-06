@@ -17,10 +17,4 @@ const ingredientsEL = ingredients.map((ingredient) => {
   return liEl;
 });
 
-const fragmentOfDocument = document.createDocumentFragment();
-
-ingredientsEL.forEach((element) => {
-  fragmentOfDocument.appendChild(element);
-});
-
-listOfIngredientsEl.appendChild(fragmentOfDocument);
+listOfIngredientsEl.append(...ingredientsEL);
